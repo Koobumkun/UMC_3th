@@ -1,0 +1,65 @@
+body{
+  background-color: #22454b;
+}
+
+.app-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-container{
+  width: 250px;
+  margin: 16px;
+  background-color: #373b69;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: filter 0.3s ease;
+}
+
+.movie-container img{
+  max-width: 100%;
+}
+
+.movie-info{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-info h4{
+  margin: 0;
+}
+
+.movie-info span{
+  margin: 3px;
+}
+
+.movie-overview {
+  display: none;
+}
+
+.movie-overview p {
+  color: white;
+  font-size: small;
+  font-weight: bold;
+}
+
+.movie-container:hover {
+  opacity: 0.6;
+}
+
+.movie-container:hover .movie-overview{
+  position: absolute;
+  left: 20;
+  top: 10%;
+  display: block;
+  z-index: 999;
+}
+
+.hovered .movie-overview {
+  opacity: 1;
+}
